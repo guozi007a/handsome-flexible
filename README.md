@@ -1,4 +1,4 @@
-# hansome-flexible
+# handsome-flexible
 **一个适配web和mobile页面尺寸的js库**
 
 # 介绍
