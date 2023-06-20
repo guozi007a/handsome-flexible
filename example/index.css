@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html,
+body {
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+.nav {
+    width: 6rem;
+    background-color: #d8d8ff;
+    box-shadow: 0 0 0.2rem 0.1rem rgba(0, 0, 0, .12);
+    transition: all .3s;
+    overflow: hidden;
+}
+.asidebar {
+    width: 26rem;
+    background-color: #f1ffff;
+    overflow: hidden;
+    transition: all .3s;
+}
+.main {
+    flex: auto;
+}
+.header {
+    width: 100%;
+    height: 6rem;
+    background-color: #f1ffff;
+    box-shadow: 0 0 0.6rem 0.2rem rgba(0, 0, 0, .12);
+    display: none;
+}
+.welcome {
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+    transition: all .3s;
+}
+.img {
+    width: 20rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+.img img {
+    width: 100%;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+.img img:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+@media screen and (max-width: 1080px) {
+    .nav,
+    .asidebar {
+        width: 0rem;
+        transition: all .3s;
+    }
+    .main .header {
+        display: block;
+    }
+    .welcome {
+        margin-top: 1rem;
+    }
+}
